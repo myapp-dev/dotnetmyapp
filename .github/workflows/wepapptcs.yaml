@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name:  Azure Web App - myapprahul
+name: Azure Web App - myapprahul
 
 on:
   push:
@@ -44,12 +44,12 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
-  - name: Azure Login
+    steps:
+      - name: Azure Login
         uses: azure/login@v1
         with:
-          creds: '${{ secrets.AZURE_CREDENTIALS }}'    
-    
-    steps:
+          creds: '${{ secrets.AZURE_CREDENTIALS }}'
+      
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
