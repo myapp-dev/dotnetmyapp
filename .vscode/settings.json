@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net8.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/6cdd51be-69f2-4db8-ace0-61086685ec5c/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/rahulg"
+}

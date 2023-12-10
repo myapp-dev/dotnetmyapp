@@ -1,0 +1,7 @@
+C:\Users\azure\Desktop\kannan\bin\Release\net8.0\publish\kannan.exe
+C:\Users\azure\Desktop\kannan\bin\Release\net8.0\publish\appsettings.Development.json
+C:\Users\azure\Desktop\kannan\bin\Release\net8.0\publish\appsettings.json
+C:\Users\azure\Desktop\kannan\bin\Release\net8.0\publish\kannan.dll
+C:\Users\azure\Desktop\kannan\bin\Release\net8.0\publish\kannan.deps.json
+C:\Users\azure\Desktop\kannan\bin\Release\net8.0\publish\kannan.runtimeconfig.json
+C:\Users\azure\Desktop\kannan\bin\Release\net8.0\publish\kannan.pdb
