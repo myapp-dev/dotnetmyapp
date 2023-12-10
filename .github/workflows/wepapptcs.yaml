@@ -43,6 +43,11 @@ jobs:
     environment:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+  - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: '${{ secrets.AZURE_CREDENTIALS }}'    
     
     steps:
       - name: Download artifact from build job
