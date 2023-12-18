@@ -1,0 +1,28 @@
+name: Azure-bicep-sample
+on:
+  workflow_dispatch:
+
+permissions:  
+  id-token: write
+  contents: read
+
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        path: ./  # Checkout to the root directory
+
+    - name: Deploy ADF Bicep Template
+      run: |
+        az deployment group create --resource-group my-test-dev \
+        --template-file example.bicep \
+       
